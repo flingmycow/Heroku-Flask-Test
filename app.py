@@ -32,4 +32,5 @@ def display_quiz():
 def display_videos():
     return render_template("tutorials.html", title="Flask Tutorials")
 
-app.run(debug=True)
+if __name__ == '__main__':
+    app.run(debug=True, use_reloader=True)
