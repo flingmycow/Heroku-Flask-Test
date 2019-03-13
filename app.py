@@ -12,11 +12,6 @@ questions = [
         'question': 'What is multiprocessing and multithreading?',
         'answer': 'Multiprocessing is creating a seperate space in memory for the application run some task'
             + 'Multithreading differs in that it uses the same memory space as a process, whereas processes are seperate from each other',
-    },
-    {
-        'question': 'When is multithreading good in Python? Can multithreading be slower than serial implementation?',
-        'answer': 'MT is good for handling I/O (ex. loading 100 URIs) - in almost all cases MP is better. '
-        + 'Multithreading can be slower than serial! In a threadpool only one thread is run at a time.'
     }
 ]
 
@@ -33,4 +28,4 @@ def display_videos():
     return render_template("tutorials.html", title="Flask Tutorials")
 
 if __name__ == '__main__':
-    app.run(debug=True, use_reloader=True)
+    app.run(debug=True)
